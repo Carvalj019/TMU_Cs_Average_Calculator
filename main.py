@@ -1,6 +1,8 @@
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
+# *SOME PARTS OF THIS SCRIPT ARE REMOVED DUE TO PRIVACY CONCERNS*
+
 scope = #holds a list of google spreadsheet links
 creds = ServiceAccountCredentials.from_json_keyfile_name("JSON credentials file here", scope)
 client = gspread.authorize(creds)
