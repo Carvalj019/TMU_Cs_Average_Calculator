@@ -1,10 +1,10 @@
 import gspread
 from oauth2client.service_account import ServiceAccountCredentials
 
-scope = ["https://spreadsheets.google.com/feeds","https://www.googleapis.com/auth/spreadsheets","https://www.googleapis.com/auth/drive.file","https://www.googleapis.com/auth/drive"]
-creds = ServiceAccountCredentials.from_json_keyfile_name("credentials.json", scope)
+scope = #holds a list of google spreadsheet links
+creds = ServiceAccountCredentials.from_json_keyfile_name("JSON credentials file here", scope)
 client = gspread.authorize(creds)
-spr = client.open_by_url('https://docs.google.com/spreadsheets/d/14bRRu_03Sdh0cvY6NWQI18laNBlkENyzUydvhPjmKOs/edit#gid=0')
+spr = client.open_by_url('spreadsheet link here')
 spreadsheet = spr.worksheet('Sheet1') #spreadsheet variable contains all the Ontario entrance admission data
 
 averagesTotal = []
